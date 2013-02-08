@@ -20,7 +20,16 @@ $$("body"){
 	}
 
 	$$("#reorder"){
-		insert_top("div", class:"mtv-zone")
+		insert_top("div", class:"mtv-zone") {
+			move_here("/html/body//div[@id='mk-news']") {
+				$$("#portfolio-news-stream"){
+					add_class("mtv-items-div") 
+					$$(".cluster") {
+						add_class("mtv-div mtv-item")
+					}
+				}
+			}
+		}
 	}
 
 	$$("#appbar"){
