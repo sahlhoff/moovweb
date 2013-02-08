@@ -16,7 +16,7 @@ $$("body"){
 	}
 
 	$$("#reorder"){
-		insert_top("div", class:"mtv-zone", data-mtv-id:"2")
+		insert_top("div", class:"mtv-zone")
 	}
 
 
@@ -49,7 +49,7 @@ $$("body"){
 			$$("div.symbol.mw_was_td"){
 				add_class("mtv-div mtv-item")
 				attribute("data-mtv-component", "ajax")
-				attribute("data-mtv-target", "2")
+				attribute("data-mtv-target", "1")
 				match(index(), "1") {
 					add_class("mtv-seleted")
 				}

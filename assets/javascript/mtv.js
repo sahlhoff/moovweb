@@ -226,7 +226,7 @@ function mtv() {
     var type;
 
     // Check for existing zones so IDs are properly assigned
-    idx = $('[data-mtv-id]').length ? $('[data-mtv-id]').length : 0;
+    idx = $('[data-mtv-id], [data-mtv-component="zone"]').length ? 1 : 0;
     // console.log(idx);
 
     // Initialize new zones
