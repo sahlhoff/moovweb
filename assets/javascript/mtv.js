@@ -100,9 +100,9 @@ function mtv() {
     }
 
     // Logs for testing
-    // console.log("Component: " + component);
-    // console.log("Target: " + target);
-    // console.log("URL: " + url);
+    console.log("Component: " + component);
+    console.log("Target: " + target);
+    console.log("URL: " + url);
     // alert(component + " target: " + target + " url: " + url);
 
     // Ajax
