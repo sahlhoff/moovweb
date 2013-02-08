@@ -5,6 +5,8 @@ $$("body"){
 	remove()
 	}
 
+	remove(".//div[@id='ad']")
+
 	$$("#country-widget"){
 		remove()
 	}
