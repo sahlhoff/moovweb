@@ -27,21 +27,25 @@
   margin-left: 0;
 }
 
-._finance {
+.mw_finance {
+	max-width:600px;
+	
+
+	.g-wrap {
+		width: 55em !important;
+		float: left;
+	}
+
+	.g-unit {
+		margin: 0 0 0 0 !important;
+		width: 55em !important;
+	}
 	
 }
 
 #mk-news {
 	width: 55em;
 	float: left;
-}
+	}
 
-.g-wrap {
-	width: 55em !important;
-	float: left;
-}
 
-.g-unit {
-	margin: 0 0 0 0 !important;
-	width: 55em !important;
-}
