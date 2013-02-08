@@ -2,18 +2,8 @@
 ### Site Functions
 ####################
 
-# A compendium of ways to "dump" tables
-#
-#
-# EXAMPLE::
-# 
-# table_dump(".//table") {
-#   $("./div[class='some_class']") {
-#     add_class("mw_more_scopes")
-#   }
-# }
-#
-#
+
+
 @func XMLNode.table_dump(Text %xpath){
   $(%xpath) {
     name("div")
