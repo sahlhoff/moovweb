@@ -76,10 +76,8 @@ $$("body"){
 		remove()
 	}
 
-
-  $(".//div[@id='gf-viewc']//div[contains(@class, 'g-tpl-right-1')]//div[@class='g-unit']"){
-	   add_class("_finance")
-    
+	$(".//div[@id='gf-viewc']//div[contains(@class, 'g-tpl-right-1')]//div[@class='g-unit']/ancestor::div[@class='g-wrap'][1]"){
+			add_class("mw_finance")
 	}
 
 	mtv_ajaxify("//div[@id='gf-viewc']//div[contains(@class, 'g-tpl-right-1')]//div[@class='g-unit']")
