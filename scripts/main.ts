@@ -17,9 +17,7 @@ match($content_type) {
     replace(/(\<(\/?)(\w+))_mwns_(\:\w+\>)/, "$1$4") 
 
   }
-  match($path, /mtv-ajax/) {
-    set($response)
-  }
+
   # with(/plain/i) {
   #   @import plain.ts
   # }
@@ -32,4 +30,6 @@ match($content_type) {
   }
 }
 
-  
+  match($path, /mtv-ajax/) {
+    set($response)
+  }

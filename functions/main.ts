@@ -325,8 +325,10 @@
 
 # Declare container node to ajax if the page is ajax'ed in
 @func XMLNode.mtv_ajaxify(Text %xpath) {
-  match($path, /mtv-ajax/){
+  match($path, /finance\?/){
+    log("------------------>  In match")
     $(%xpath) {
+      log("------------------>  In xpath")
       $response = inner()
     }
   }

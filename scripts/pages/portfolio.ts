@@ -15,6 +15,9 @@ $$("body"){
 		remove()
 	}
 
+	$$("#reorder"){
+		insert_top("div", class:"mtv-zone")
+	}
 
 
 	$$("#trend"){
@@ -31,8 +34,9 @@ $$("body"){
 			add_class("mtv-items-div")
 
 			$$("li.fjfe-nav-item"){
-			add_class("mtv-div mtv-item")
-		}
+				add_class("mtv-div mtv-item")
+
+			}
 		}
 
 	}
@@ -44,6 +48,8 @@ $$("body"){
 			
 			$$("div.symbol.mw_was_td"){
 				add_class("mtv-div mtv-item")
+				attribute("data-mtv-component", "ajax")
+				attribute("data-mtv-target", "1")
 			}
 		}
 	}

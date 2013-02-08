@@ -18,8 +18,12 @@ match($status) {
     log("--> STATUS: 200")
 
     match($path) {
+      with(/finance\?/){
+        log("--> Importing finance.ts")
+        @import pages/finance.ts
+      }
       with(/finance/){
-        log("--xxxxxxxxxxx---xxxxxx---> Importing portfolio.ts")
+        log("--> Importing portfolio.ts")
         @import pages/portfolio.ts
       }
       with(/^\/$|^\/\?/) {
