@@ -20,7 +20,9 @@
 //@import "globals/_mtv.scss";
 
 .mtv-hover {
-  @include box-shadow(0 0 8px 3px #1CC2EC, inset 0 0 3px 4px #070707);
+	border: solid 1px red;
+	border-radius: 3px;
+  //@include box-shadow(0 0 8px 3px #1CC2EC, inset 0 0 3px 4px #070707);
 }
 
 #gf-viewc {
@@ -37,8 +39,8 @@ body {
 }
 
 .mw_finance {
-	width:600px;
-	
+	max-width: 55em !important;
+	float: left;
 
 	.g-wrap {
 		width: 55em !important;
@@ -60,4 +62,8 @@ body {
 #mw_main {
   max-width: 800px;
   float: left;
+	}
+
+#home-portfolios .quotes .symbol {
+	text-align: center;
 }
