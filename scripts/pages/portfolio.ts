@@ -11,6 +11,10 @@ $$("body"){
 		remove()
 	}
 
+	$$("#gb"){
+		remove()
+	}
+
 	$$("#gf-foot"){
 		remove()
 	}
@@ -29,16 +33,7 @@ $$("body"){
 	}
 
 	$$("#gf-nav"){
-		add_class("mtv-zone")
-		$$("#navmenu"){
-			add_class("mtv-items-div")
-
-			$$("li.fjfe-nav-item"){
-				add_class("mtv-div mtv-item")
-
-			}
-		}
-
+		remove()
 	}
 
 	$$("div.miniPort"){
