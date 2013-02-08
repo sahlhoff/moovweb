@@ -144,9 +144,9 @@ function mtv() {
             reinit();
           },
           dataType: "html",
-          type:"GET",
+          type:"GET"
           // set ajax in query param so it can be caught easily
-          data: "mtv-ajax"
+          //data: "mtv-ajax"
         }).done(function() {
 
         });
