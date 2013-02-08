@@ -20,7 +20,7 @@ $$("body"){
 	}
 
 	$$("#reorder"){
-		insert_top("div", class:"mtv-zone") {
+		insert_top("div", class:"mtv-zone", id:"mw_main") {
 			move_here("/html/body//div[@id='mk-news']") {
 				$$("#portfolio-news-stream"){
 					add_class("mtv-items-div") 

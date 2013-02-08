@@ -27,8 +27,17 @@
   margin-left: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
+#portfolios {
+  overflow: scroll;
+  height: 600px;
+}
+
 .mw_finance {
-	max-width:600px;
+	width:600px;
 	
 
 	.g-wrap {
@@ -46,6 +55,9 @@
 #mk-news {
 	width: 55em;
 	float: left;
-	}
+}
 
-
+#mw_main {
+  max-width: 800px;
+  float: left;
+}
