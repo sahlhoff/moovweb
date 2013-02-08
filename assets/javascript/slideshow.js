@@ -1,5 +1,5 @@
 x$(document).on("DOMContentLoaded", function() {
-  x$("body._home._gallery").each(function() {
+  x$("body").each(function() {
     // console.log("reached body");
     var interval = null;
     var mtvNext;
@@ -7,7 +7,8 @@ x$(document).on("DOMContentLoaded", function() {
 
     jQuery(function(){
       // console.log("reached interval");
-      interval = setInterval(callNext, 6000);
+      console.log("slideshow initialized");
+      interval = setInterval(callNext, 10000);
 
 
       // check cookie
@@ -20,8 +21,9 @@ x$(document).on("DOMContentLoaded", function() {
     });
 
     function callNext(){
-      // console.log("reached click");
+      console.log("calling next");
       mtvNext = jQuery('.mtv-selected').next();
+      console.log(mtvNext);
       setSelected(mtvNext);
       mtvNext.trigger('click');
     }

@@ -58,7 +58,7 @@ $$("body"){
 				attribute("data-mtv-component", "ajax")
 				attribute("data-mtv-target", "0")
 				match(index(), "1") {
-					add_class("mtv-seleted")
+					add_class("mtv-selected")
 				}
 			}
 		}
