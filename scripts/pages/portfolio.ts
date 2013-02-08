@@ -22,6 +22,12 @@ $$("body"){
 	$$("#markets") {
 		remove()
 	}
+	$$("#currencies") {
+		remove()
+	}
+	$$("#bonds") {
+		remove()
+	}
 
 	$$("#reorder"){
 		insert_top("div", class:"mtv-zone", id:"mw_main") {
