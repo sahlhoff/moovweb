@@ -23,6 +23,9 @@ $$("body"){
 		insert_top("div", class:"mtv-zone")
 	}
 
+	$$("#appbar"){
+		remove()
+	}
 
 	$$("#trend"){
 		remove()
@@ -44,7 +47,7 @@ $$("body"){
 			$$("div.symbol.mw_was_td"){
 				add_class("mtv-div mtv-item")
 				attribute("data-mtv-component", "ajax")
-				attribute("data-mtv-target", "1")
+				attribute("data-mtv-target", "0")
 			}
 		}
 	}
