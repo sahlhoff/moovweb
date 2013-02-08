@@ -107,11 +107,12 @@ function mtv() {
 
     // Ajax
     if(component === 'ajax') {
-
+      console.log("MAKING AJAX REQUEST");
       // Make request
       if(url) {
         // Mark target for ajaxed content if it exists
         if($("[data-mtv-id='" + target + "']")) {
+          console.log("TARGET FOUND: ", +target);
           $("[data-mtv-id='" + target + "']").attr('data-mtv-transform', 'true');
         }
         else {
@@ -122,7 +123,7 @@ function mtv() {
         window.onpopstate = function(event) {
           // console.log("pathname: "+location.pathname);
           // default to go home
-          window.location = window.location.origin;
+          window.location = window.location.origin + "/finance";
         };
         $.ajax({
           url: url,
@@ -130,14 +131,18 @@ function mtv() {
             // console.log(data);
             // console.log(textStatus);
             // console.log(xhr);
+            console.log("SUCCESS");
           },
           error: function(xhr, textStatus, errorThrown) {
-            // console.log(xhr);
             // console.log(textStatus);
             // console.log(errorThrown);
+            console.log("ERROR");
+            console.log(xhr);
           },
           complete: function(data, textStatus) {
-            // console.log(data);
+            console.log(data);
+            console.log(data.responseText);
+            console.log("COMPLETION");
             $("[data-mtv-transform]").html(data.responseText);
             $("[data-mtv-transform]").removeAttr('data-mtv-id');
             $("[data-mtv-transform]").removeAttr('data-mtv-transform');
@@ -226,7 +231,8 @@ function mtv() {
     var type;
 
     // Check for existing zones so IDs are properly assigned
-    idx = $('[data-mtv-id], [data-mtv-component="zone"]').length ? 1 : 0;
+    // idx = $('[data-mtv-id], [data-mtv-component="zone"]').length ? 1 : 0;
+    idx = 0;
     // console.log(idx);
 
     // Initialize new zones
